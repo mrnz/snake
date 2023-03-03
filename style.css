@@ -15,13 +15,16 @@
 }
 
 #wrapper {
+    background-color: #95C00A;
+    padding: 50px;
     display: inline-block;
     position: relative;
 }
 
 #grid {
-    background: green;
+    background-color: #88b103;
     display: inline-grid;
+    border: 10px solid #2D4303;
     gap: 1px;
 }
 
@@ -36,21 +39,21 @@
 #grid > div > div {
     height: 40px;
     width: 40px;
-    
-    background-color: lightslategray;
+    background-color: #95C00A;
     justify-content: space-between;
     box-sizing: border-box;
 
 } 
 
 #grid .snakeClass {
-    background-color: red;
+    background-color: #2D4303;
 }
 
 #grid .foodClass {
-    background-color: plum;
-    border-radius: 50%;
-    
+  background-image: repeating-conic-gradient(#2D4303 0% 25%, #95C00A 0% 50%);
+  background-position: 13px 13px;
+  background-size: 30px 30px;
+  background-color: #2D4303;    
 }
 
 #result {
